@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App in Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Start Quiz Button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info_head">
+            <span>Instruction/Rules for Quiz</span>
+        </div>
+        <div class="info_list">
+            <ol>
+                <li>You will have only <span>30 seconds</span> for each question.</li>
+                <li>Once you select answer, you can not reselect.</li>
+                <li>You can't select any option once times goesoff. </li>
+                <li>You cannot exit quiz once you started by clicking <span>Continue button</span></li>
+                <li>you can see your score at the end of quiz, ther is no negative marking.</li>
+            </ol>
+        </div>
+        <div class="buttons">
+            <button  class="exit">Exit Quiz</button>
+            <button class="conts">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Coder Quiz Application</div>
+            <div class="timer">
+                <div class="time_txt">Time left:</div>
+                <div class="time_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="ques_text">
+                <!-- <span>What does HTML Stands for?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Tool Multi Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Processor</span>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Markup Line</span>
+                </div> -->
+            </div>
+        </section>
+        <!-- question footer -->
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>2</p>of<p>5</p>Question</span> -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+    <!-- result box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="question.js"></script>
+</body>
+</html>
